@@ -16,78 +16,48 @@
     <!-- Style links  -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-white body">
-    <!-- Header Start  -->
-    <header
-      class="fixed w-full top-0 z-50 bg-transparent shadow-md bg-opacity-50 backdrop-blur-3xl shadow-gray-500"
-    >
-      <div class="container mx-auto px-16">
-        <div class="flex justify-between items-center py-5">
-          <div class="">
-            <h2 class="text-3xl font-semibold">Where In the World?</h2>
-          </div>
+  <body class="bg-black">
+    <div class="container mx-auto px-16 flex justify-center items-center">
+      <div class="wrapper w-[400px] px-10 h-[400px] rounded-md bg-white mt-20">
+        <form class="flex flex-col px-5" action="">
+          <label class="font-semibold mt-4" for="">Summani Kiritng</label>
+          <input
+            class="border-2 input border-gray-500 px-6 mt-3 focus:outline-emerald-500"
+            placeholder="raqam kiritng"
+            type="number"
+          />
+          <button
+            class="convert font-medium border-2 w-[110px] bg-black rounded-lg text-white py-1 mt-2 px-6 active:scale-[0.9]"
+          >
+            Convert
+          </button>
+          <br />
+        </form>
+        <label class="font-semibold border ml-6  border-black rounded-md p-1" for=""
+          >From</label
+        >
+        <select name="" id="fromSelect">
+          <option class="font-semibold" selected value="uzs">UZS</option>
+          <option class="font-semibold" value="usd">USD</option>
+          <option class="font-semibold" value="rub">RUB</option>
+        </select>
 
-          <div class="">
-            <button
-              class="bg-transparent btn1 border-blue-950 border-2 rounded-full p-[1px] w-10"
-            >
-              <span class="">
-                <div
-                  class="bg-black border border-blue-950 w-4 h-4 rounded-full shar"
-                ></div>
-              </span>
-            </button>
-          </div>
-        </div>
+        <br /><br />
+        <label
+          class="font-semibold border ml-6 border-black rounded-md py-1 px-[13px]"
+          for=""
+          >To</label
+        >
+        <select name="" id="toSelect">
+          <option value="uzs">UZS</option>
+          <option selected value="usd">USD</option>
+          <option value="rub">RUB</option>
+        </select>
+        <br /><br />
+
+        <div class="card1 mt-5 text-center rounded-md font-mono"></div>
       </div>
-    </header>
-    <!-- Header Finish  -->
-
-    <main class="">
-      <!-- Hero Section Start  -->
-
-      <section class="py-16">
-        <div class="container mx-auto px-16">
-          <div class="flex mt-5 gap-2">
-            <div class="">
-              <input
-                class="bg-black py-1 border-2 border-gray-500 shadow-md shadow-gray-500 px-5 text-white input rounded-lg"
-                placeholder="search"
-                type="text"
-              />
-            </div>
-
-            <div class="">
-              <button
-                class="shadow-md shadow-gray-400 font-medium active:scale-[0.9] border-2 border-[] bg-[] rounded-lg btn py-1 px-6 hover:bg-transparent hover:text-[]"
-              >
-                Enter
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="">
-        <div class="container mx-auto px-5">
-          <div
-            class="flex flex-wrap wrapper justify-center items-center gap-10"
-          ></div>
-        </div>
-      </section>
-
-      <!-- Hero Section Finish  -->
-    </main>
-
-    <!-- Footer Start  -->
-    <footer class="">
-      <div class="container mx-auto px-5">
-        <div class="flex">
-          <div class=""></div>
-          <div class=""></div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Finish  -->
+    </div>
     <noscript>Browser java scriptni qollab quvvatlamaydi</noscript>
     <script src="./app.js"></script>
   </body>
